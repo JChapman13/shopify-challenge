@@ -38,7 +38,6 @@ function App() {
         }
       );
       const data = await res.json();
-      console.log(data);
       setAIMessages([
         { msgPrompt: prompt, aiResponse: data.choices[0].text },
         ...aiMessages,
